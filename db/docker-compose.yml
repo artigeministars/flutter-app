@@ -1,0 +1,19 @@
+
+services:
+  db_flutter_postgres:
+    container_name: flutter_postgres
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: local
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./docker/postgresql:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:
+

@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "CloudSQL-PostgreSQL",
+            "name": "flutter_postgres",
+            "instanceConnectionName": "flutter_postgres",
+            "database": "local",
+            "username": "root",
+            "password": "mysecretpassword"
+        }
+    ]
+}
