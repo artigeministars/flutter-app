@@ -411,34 +411,6 @@ Future<void> _addLikesDialogBuilder(BuildContext context) {
       }
       }
       
-      // Download image
-      // final http.Response response = await http.get(Uri.parse(_url));
-
-      // Get temporary directory
-      /*
-      final dir = await getTemporaryDirectory();
-      var myDir = Directory('assets/user_images');
-      if(await myDir.exists()){
-        print(myDir);
-      }
-
-      final intValue = Random().nextInt(1) + 1000000;
-      // Create an image name
-      var filename = '${dir.path}/image$intValue.png';
-
-      final bData = fileN!.toByteData(format: ImageByteFormat.rawRgba);
-            
-
-  final fileName = '${DateTime.now().millisecondsSinceEpoch}.jpg'; 
-
-      // Save to filesystem
-      final file = File(filename);
-      await file.writeAsBytes(bData);
-      
-      // Ask the user to save it
-      final params = SaveFileDialogParams(sourceFilePath: fileN.path);
-      final finalPath = await FlutterFileDialog.saveFile(params: params);
-      */
       
     } catch (e) {
       message = 'An error occurred while saving the image';

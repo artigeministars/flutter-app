@@ -21,13 +21,11 @@ Future<bool?> addingPhoto({ var photo , String? user_id }) async {
   final photoId = await _userService.addPhoto(photo: photo,user_id: user_id);
   if( photoId != null){
     print(photoId);
-    print(" 222 ");
     return true;
   }
   return null;
   } on Exception catch(e) {
     print(e.toString());
-    print(" 222 2 ");
     log('Error: ${e.toString()}');
     return null;
   } finally {
@@ -63,7 +61,6 @@ Future<List<Photo>> getAllPhotos() async {
   List<Photo> photos = await _userService.getPhotos(user_id: userId);
 
   if( photos.isNotEmpty ){
-    // print(photos);
     return photos;
   }
   return [];

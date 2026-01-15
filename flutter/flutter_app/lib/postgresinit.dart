@@ -57,12 +57,10 @@ base class PostgresMain {
           );
           
           log('has normal connection!');
-          print('has normal connection!');
           return connection;
           
 
         } catch (e) {
-            print('error connection!');
             log('Error normal Connection : ${e.toString()}');
             return null;
         } 

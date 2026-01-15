@@ -1,5 +1,4 @@
 import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_app2/signup.dart';
 import 'package:flutter_app2/ui/login_viewmodel.dart';
@@ -31,12 +30,6 @@ class _LoginPageState extends State<LoginPage> with LoginForm {
 }
 
 mixin LoginForm {
-
-  // Create a global key that uniquely identifies the Form widget
-  // and allows validation of the form.
-  //
-  // Note: This is a `GlobalKey<FormState>`,
-  // not a GlobalKey<MyCustomFormState>.
 
   final _formKey = GlobalKey<FormState>();
   
